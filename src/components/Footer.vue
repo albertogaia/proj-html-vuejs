@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import PrimaryMenu from "./PrimaryMenu.vue";
+import PrimaryMenu from "./micro-components/PrimaryMenu.vue";
 
 export default {
   components: {

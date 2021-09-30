@@ -1,6 +1,6 @@
 const primaryMenu = [
     {
-        url: '#',
+        url: '#home',
         text: 'Home',
         active: true,
     },

@@ -5,6 +5,10 @@
         <div class="jumbo-text">
           <h4 class="subtitle">Always the best way you need it</h4>
           <h1>The best business consulting</h1>
+          <div class="ctas">
+            <button><a href="#about">Read More</a></button>
+            <div class="play-button"><i class="fas fa-play"></i></div>
+          </div>
         </div>
       </div>
     </div>
@@ -36,6 +40,8 @@ export default {
       top: calc(50% + 40px);
       transform: translateY(-50%);
 
+      @include button("primary");
+
       h4::before {
         content: "";
         display: inline-block;
@@ -50,6 +56,33 @@ export default {
         font-family: $jamjuree;
         color: $white;
         text-transform: uppercase;
+      }
+      .ctas {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+      }
+      .play-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid $white;
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        i {
+          font-size: 15px;
+          color: $acquamarine;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          background: $red;
+        }
       }
     }
   }

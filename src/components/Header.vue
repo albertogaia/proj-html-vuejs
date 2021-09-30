@@ -1,5 +1,5 @@
 <template>
-  <header class="container flex">
+  <header class="container flex" id="home">
     <div class="logo">
       <img src="@/img/logo.png" alt="logo" />
     </div>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import PrimaryMenu from "./PrimaryMenu.vue";
+import PrimaryMenu from "./micro-components/PrimaryMenu.vue";
 export default {
   name: "Header",
 

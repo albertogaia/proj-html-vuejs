@@ -3,7 +3,8 @@
     <li
       v-for="(item, index) in menu"
       :key="index"
-      :class="item.active ? 'active' : null"
+      :class="item == currentLink ? 'active' : null"
+      @click="getCurrentLink(index)"
     >
       <a :href="item.url">{{ item.text }}</a>
     </li>
@@ -17,11 +18,19 @@ export default {
   data() {
     return {
       menu: primaryMenu,
+      currentLink: "",
     };
   },
-  methods: {},
+  methods: {
+    getCurrentLink(i) {
+      let tmpLink = this.menu[i];
+      this.currentLink = tmpLink;
+    },
+  },
 
-  created() {},
+  created() {
+    this.currentLink = this.menu[0];
+  },
 };
 </script>
 

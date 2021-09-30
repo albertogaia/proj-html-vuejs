@@ -24,7 +24,9 @@ export default {
 <style lang="scss">
 @import "@/styles/general.scss";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-
+html {
+  scroll-behavior: smooth;
+}
 #app {
   background-color: $dark-blue;
 }
