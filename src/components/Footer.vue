@@ -1,5 +1,5 @@
 <template>
-  <footer class="container">
+  <footer class="container px-10">
     <div class="footer-top flex">
       <div class="foot-logo">
         <img src="@/img/logo-w.png" alt="" />

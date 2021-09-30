@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="jumbotron">
-      <div class="container">
+      <div class="container px-10">
         <div class="jumbo-text">
           <h4 class="subtitle">Always the best way you need it</h4>
           <h1>The best business consulting</h1>
