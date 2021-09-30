@@ -5,14 +5,7 @@
         <img src="@/img/logo-w.png" alt="" />
       </div>
       <div class="foot-nav">
-        <ul class="nav-links">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+        <PrimaryMenu />
       </div>
       <div class="foot-socials">
         <i class="fab fa-facebook-f"></i>
@@ -38,7 +31,12 @@
 </template>
 
 <script>
+import PrimaryMenu from "./PrimaryMenu.vue";
+
 export default {
+  components: {
+    PrimaryMenu,
+  },
   name: "Footer",
 };
 </script>

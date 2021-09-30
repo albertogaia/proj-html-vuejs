@@ -4,21 +4,25 @@
       <img src="@/img/logo.png" alt="logo" />
     </div>
     <div class="navmenu">
-      <ul class="nav-links">
-        <li class="active"><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+      <PrimaryMenu />
     </div>
   </header>
 </template>
 
 <script>
+import PrimaryMenu from "./PrimaryMenu.vue";
 export default {
   name: "Header",
+
+  components: {
+    PrimaryMenu,
+  },
+  data() {
+    return {};
+  },
+  methods: {},
+
+  created() {},
 };
 </script>
 
