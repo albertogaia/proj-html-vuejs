@@ -3,15 +3,17 @@
     <Header />
     <Jumbotron />
     <Services />
+    <About />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
 import Jumbotron from "./components/Jumbotron.vue";
 import Services from "./components/Services.vue";
+import About from "./components/AboutUs.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     Header,
     Jumbotron,
     Services,
+    About,
     Footer,
   },
 };

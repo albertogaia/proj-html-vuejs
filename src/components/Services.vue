@@ -116,7 +116,11 @@ export default {
       .text-card {
         width: 400px;
         margin-left: 20px;
+        p {
+          font-size: $fs-p;
+        }
         h4 {
+          font-size: $fs-title;
           text-transform: uppercase;
           font-family: $jamjuree;
           margin-bottom: 15px;

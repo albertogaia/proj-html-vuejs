@@ -43,7 +43,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/styles/general.scss";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 footer {
   font-family: $montserrat;
