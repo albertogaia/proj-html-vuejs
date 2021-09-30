@@ -1,11 +1,16 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <Header />
+  </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    Header,
+  },
 };
 </script>
 
@@ -13,5 +18,6 @@ export default {
 @import "@/styles/general.scss";
 
 #app {
+  background-color: $dark-blue;
 }
 </style>
