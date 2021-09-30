@@ -1,7 +1,7 @@
 <template>
   <header class="container flex px-10" id="home">
     <div class="logo">
-      <img src="@/img/logo.png" alt="logo" />
+      <a href="/"><img src="@/img/logo.png" alt="logo" /></a>
     </div>
     <div class="navmenu">
       <PrimaryMenu />

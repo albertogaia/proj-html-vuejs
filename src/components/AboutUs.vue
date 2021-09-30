@@ -4,10 +4,10 @@
       <div class="img-about">
         <img src="@/assets/img/about.jpg" alt="about us" />
       </div>
-      <div class="text-about">
-        <h4 class="subtitle">About Us</h4>
-        <h2>We make your strategy work</h2>
-        <p>
+      <div class="text-about white">
+        <span class="subtitle line-left">About Us</span>
+        <h2 class="title">We make your strategy work</h2>
+        <p class="paragraph light">
           When, while lovely valley teems with vapour around meand eridian sun
           strikes the upper impenetrable foliage of my trees, and but a thousand
           unknown plants are noticed when I hear the buzz of the little world
@@ -53,19 +53,8 @@ export default {
       }
     }
     .text-about {
-      color: white;
       padding: 5%;
       width: 35%;
-
-      h2 {
-        text-transform: uppercase;
-        font-size: $fs-h2;
-        font-family: $jamjuree;
-      }
-      p {
-        color: $txt-opacity;
-        font-weight: $light;
-      }
     }
   }
 }

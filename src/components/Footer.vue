@@ -8,10 +8,16 @@
         <PrimaryMenu />
       </div>
       <div class="foot-socials">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-twitter"></i>
+        <a href="#" class="text-reset white"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" class="text-reset white"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" class="text-reset white"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="#" class="text-reset white"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
     <div class="footer-bottom flex">
@@ -20,11 +26,9 @@
         <p><a class="text-reset" href="">Privacy Environment Policy</a></p>
       </div>
       <div class="copyright">
-        <p>
-          <a class="text-reset" href=""
-            >Copyright ©2021 Phlox Consulting. All Rights Reserved.</a
-          >
-        </p>
+        <span class="light"
+          >Copyright ©2021 Phlox Consulting. All Rights Reserved.</span
+        >
       </div>
     </div>
   </footer>
@@ -67,16 +71,23 @@ footer {
 
       i {
         margin-left: 10px;
+        transition: 0.8s;
+        &:hover {
+          color: $acquamarine;
+        }
       }
     }
   }
 
   .footer-bottom {
+    font-size: $fs-small;
     padding: 40px 0;
     justify-content: space-between;
     a {
       color: $txt-opacity;
-      font-size: $fs-p;
+      &:hover {
+        color: $white;
+      }
     }
   }
 }

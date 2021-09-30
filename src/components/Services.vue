@@ -1,16 +1,16 @@
 <template>
   <section id="services" class="px-100">
     <div class="container-small">
-      <h4 class="jamjuree title-section px-10">Our consultants can help you</h4>
+      <h3 class="jamjuree title px-10">Our consultants can help you</h3>
       <div class="cards px-10">
         <div class="card">
           <div class="icon-card">
             <i class="far fa-chart-bar"></i>
           </div>
           <div class="text-card">
-            <h4>Statistical Consulting</h4>
+            <h4 class="title">Statistical Consulting</h4>
             <div class="line"></div>
-            <p>
+            <p class="paragraph">
               When, while lovely valley teems with vapour around meand eridian
               sun strikes the upper impenetrable foliage of my trees, and but a
             </p>
@@ -21,8 +21,8 @@
             <i class="fas fa-bullhorn"></i>
           </div>
           <div class="text-card">
-            <h4>DIGITAL CONSULTING</h4>
-            <p>
+            <h4 class="title">DIGITAL CONSULTING</h4>
+            <p class="paragraph">
               When, while lovely valley teems with vapour around meand eridian
               sun strikes the upper impenetrable foliage of my trees, and but a
             </p>
@@ -33,8 +33,8 @@
             <i class="fas fa-wallet"></i>
           </div>
           <div class="text-card">
-            <h4>BANKING CONSULTING</h4>
-            <p>
+            <h4 class="title">BANKING CONSULTING</h4>
+            <p class="paragraph">
               When, while lovely valley teems with vapour around meand eridian
               sun strikes the upper impenetrable foliage of my trees, and but a
             </p>
@@ -45,7 +45,7 @@
             <i class="fas fa-bullseye"></i>
           </div>
           <div class="text-card">
-            <h4>ENTERPRISE CONSULTING</h4>
+            <h4 class="title">ENTERPRISE CONSULTING</h4>
             <p>
               When, while lovely valley teems with vapour around meand eridian
               sun strikes the upper impenetrable foliage of my trees, and but a
@@ -69,20 +69,17 @@ export default {
 #services {
   background-color: white;
   position: relative;
-  .title-section {
-    // position: relative;
-    text-transform: uppercase;
-    font-size: $fs-title;
+  h3.title {
     margin-bottom: 100px;
 
     &::after {
       display: inline-block;
       content: "";
       position: absolute;
-      top: 110px;
+      top: 130px;
       transform: translateY(-50%);
       right: 0;
-      width: 60%;
+      width: 55%;
       overflow: hidden;
       height: 3px;
       background-color: $acquamarine;
@@ -116,15 +113,6 @@ export default {
       .text-card {
         width: 400px;
         margin-left: 20px;
-        p {
-          font-size: $fs-p;
-        }
-        h4 {
-          font-size: $fs-title;
-          text-transform: uppercase;
-          font-family: $jamjuree;
-          margin-bottom: 15px;
-        }
       }
     }
   }

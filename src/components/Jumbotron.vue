@@ -3,7 +3,9 @@
     <div class="jumbotron">
       <div class="container px-10">
         <div class="jumbo-text">
-          <h4 class="subtitle">Always the best way you need it</h4>
+          <span class="subtitle line-left white"
+            >Always the best way you need it</span
+          >
           <h1>The best business consulting</h1>
           <div class="ctas">
             <button><a href="#about">Read More</a></button>
@@ -41,15 +43,6 @@ export default {
       transform: translateY(-50%);
 
       @include button("primary");
-
-      h4::before {
-        content: "";
-        display: inline-block;
-        width: 35px;
-        height: 2px;
-        margin-right: 15px;
-        background-color: $acquamarine;
-      }
 
       h1 {
         font-size: $fs-h1;
