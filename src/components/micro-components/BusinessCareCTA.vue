@@ -1,5 +1,5 @@
 <template>
-  <div class="cta">
+  <div class="cta container-aside">
     <h3 class="jamjuree title px-10">We help to deliver the business care</h3>
     <p class="paragraph">
       When, while lovely valley teems with vapour around meand meridian sun
@@ -20,7 +20,6 @@ export default {
 @import "../../styles/general.scss";
 
 .cta {
-  width: 90%;
   height: 300px;
   position: relative;
   background-color: $acquamarine;

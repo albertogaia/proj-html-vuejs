@@ -5,18 +5,18 @@ const primaryMenu = [
         active: true,
     },
     {
+        url: '#services',
+        text: 'Services',
+        active: false,
+    },
+    {
         url: '#about-us',
-        text: 'About',
+        text: 'About Us',
         active: false,
     },
     {
         url: '#projects',
         text: 'Projects',
-        active: false,
-    },
-    {
-        url: '#services',
-        text: 'Services',
         active: false,
     },
     {

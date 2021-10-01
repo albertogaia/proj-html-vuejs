@@ -5,6 +5,7 @@
     <Services />
     <About />
     <Projects />
+    <Testimonials />
     <Footer />
   </div>
 </template>
@@ -15,6 +16,7 @@ import Jumbotron from "./components/Jumbotron.vue";
 import Services from "./components/Services.vue";
 import About from "./components/AboutUs.vue";
 import Projects from "./components/Projects.vue";
+import Testimonials from "./components/Testimonials.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -25,6 +27,7 @@ export default {
     Services,
     About,
     Projects,
+    Testimonials,
     Footer,
   },
 };
