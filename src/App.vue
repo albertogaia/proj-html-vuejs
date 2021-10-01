@@ -16,8 +16,12 @@
         ><div class="up-to-page">
           <i class="fas fa-arrow-up"></i></div
       ></a>
-      <button class="chat"><i class="far fa-comment"></i></button>
+      <button class="chat" @click="getChatBox">
+        <i class="far" :class="iconChat"></i>
+      </button>
     </div>
+
+    <Chatbox v-show="visible" />
   </div>
 </template>
 
@@ -33,6 +37,7 @@ import HeroCTA from "./components/HeroCTA.vue";
 import Footer from "./components/Footer.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Chatbox from "./components/micro-components/Chatbox.vue";
 AOS.init();
 
 export default {
@@ -47,8 +52,14 @@ export default {
     Blog,
     HeroCTA,
     Footer,
+    Chatbox,
   },
-
+  data() {
+    return {
+      visible: false,
+      iconChat: "",
+    };
+  },
   methods: {
     scrollFunction() {
       let mybutton = document.getElementById("myBtn");
@@ -61,9 +72,22 @@ export default {
         mybutton.style.display = "none";
       }
     },
+
+    getChatBox() {
+      if (this.visible == true) {
+        this.visible = false;
+        this.iconChat = "far fa-comment";
+      } else {
+        this.visible = true;
+        this.iconChat = "fas fa-times";
+      }
+    },
   },
   mounted() {
     window.addEventListener("scroll", this.scrollFunction);
+  },
+  created() {
+    this.iconChat = "fa-comment";
   },
 };
 </script>

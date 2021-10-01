@@ -20,7 +20,7 @@ Primo mini progetto gestito e organizzato
 - [x] ADD animations
 - [x] Details
 - [x] FINISHES AND CODE CLEANING
-- [ ] Checks browsers supports
+- [x] Checks browsers supports
   ## Color Reference
 
 | Color             | Hex                                                                |
