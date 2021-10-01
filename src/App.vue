@@ -7,6 +7,7 @@
     <Projects />
     <Testimonials />
     <Blog />
+    <HeroCTA />
     <Footer />
   </div>
 </template>
@@ -19,6 +20,7 @@ import About from "./components/AboutUs.vue";
 import Projects from "./components/Projects.vue";
 import Testimonials from "./components/Testimonials.vue";
 import Blog from "./components/Blog.vue";
+import HeroCTA from "./components/HeroCTA.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Projects,
     Testimonials,
     Blog,
+    HeroCTA,
     Footer,
   },
 };

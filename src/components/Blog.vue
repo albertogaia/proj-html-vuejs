@@ -1,5 +1,5 @@
 <template>
-  <section id="blog" class="container px-100">
+  <section id="blog" class="container">
     <div class="top-section flex">
       <div class="section-text">
         <span class="subtitle line-left white">Blog</span>
@@ -60,6 +60,7 @@ export default {
 @import "../styles/general.scss";
 
 #blog {
+  padding-top: 100px;
   .top-section {
     justify-content: space-between;
     align-items: center;
