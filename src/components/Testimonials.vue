@@ -10,40 +10,25 @@
     </div>
     <div class="bottom-section container-aside">
       <template>
-        <div class="testimonial montserrat">
-          <div class="single-testimonial p-50">
-            <p class="paragraph">
-              When, while lovely valley teems with vapour around meand eridian
-              sun strikes the upper impenetrable foliage of my trees, and but a
-              thousand unknown plants are noticed by when I hear the buzz of the
-              little .
-            </p>
-            <span class="jamjuree testimonial-name">Vera Duncan</span>
-            <span class="testimonia-industry">Amazon Inc.</span>
-          </div>
-        </div>
-        <div class="testimonial montserrat">
-          <div class="single-testimonial p-50">
-            <p class="paragraph">
-              When, while lovely valley teems with vapour around meand eridian
-              sun strikes the upper impenetrable foliage of my trees, and but a
-              thousand unknown plants are noticed by when I hear the buzz of the
-              little .
-            </p>
-            <span class="jamjuree testimonial-name">Vera Duncan</span>
-            <span class="testimonia-industry">Amazon Inc.</span>
-          </div>
-        </div>
-        <div class="testimonial montserrat">
-          <div class="single-testimonial p-50">
-            <p class="paragraph">
-              When, while lovely valley teems with vapour around meand eridian
-              sun strikes the upper impenetrable foliage of my trees, and but a
-              thousand unknown plants are noticed by when I hear the buzz of the
-              little .
-            </p>
-            <span class="jamjuree testimonial-name">Vera Duncan</span>
-            <span class="testimonia-industry">Amazon Inc.</span>
+        <div class="container-inside">
+          <div
+            class="testimonial montserrat"
+            v-for="(testimonial, index) in testimonials"
+            :key="index"
+            :id="index"
+          >
+            <img :src="require(`../assets/${testimonial.img}`)" alt="" />
+            <div class="single-testimonial p-50">
+              <p class="paragraph">
+                {{ testimonial.text }}
+              </p>
+              <span class="jamjuree testimonial-name">{{
+                testimonial.name
+              }}</span>
+              <span class="testimonia-industry">{{
+                testimonial.industry
+              }}</span>
+            </div>
           </div>
         </div>
       </template>
@@ -52,8 +37,15 @@
 </template>
 
 <script>
+import { testimonials } from "../assets/data/Testimonials";
 export default {
   name: "Testimonials",
+  data() {
+    return {
+      testimonials: testimonials,
+    };
+  },
+  methods: {},
 };
 </script>
 
@@ -73,23 +65,43 @@ export default {
     }
   }
   .bottom-section {
-    margin: 0 0 0 auto;
+    margin: 0 0px 0 auto;
     background-color: $white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
+    .container-inside {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      max-width: 1440px;
+    }
     .testimonial {
       display: flex;
       flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+      width: calc(100% / 3);
+      min-width: 300px;
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 1s ease-in-out;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+      }
+      &:hover img {
+        opacity: 1;
+      }
       .single-testimonial {
-        max-width: 450px;
-        transition: 0.8s;
+        width: 100%;
+        transition: 0.5s;
+        z-index: 3;
         &:hover {
-          background-image: url("../assets/img/testimonial-1.jpg");
-          background-position: center;
-          background-size: cover;
           color: $white;
+          text-shadow: 3px 3px 10px $dark-blue;
         }
         .testimonial-name {
           display: block;

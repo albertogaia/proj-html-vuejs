@@ -18,36 +18,15 @@
     </div>
     <div class="bottom-section">
       <div class="cards montserrat">
-        <div class="card">
-          <img src="../assets/img/project-1.jpg" alt="" />
+        <div class="card" v-for="(project, index) in projects" :key="index">
+          <img
+            :src="require(`../assets/${project.img}`)"
+            :alt="project.title"
+          />
           <div class="text-card">
             <div class="text-info">
-              <span class="project-title white">Purinky Products</span>
-              <span class="project-category light">Uncategorized</span>
-            </div>
-            <button class="plus-card btn-slide">
-              <i class="fas fa-plus"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/img/project-1.jpg" alt="" />
-          <div class="text-card">
-            <div class="text-info">
-              <span class="project-title white">Purinky Products</span>
-              <span class="project-category light">Uncategorized</span>
-            </div>
-            <button class="plus-card btn-slide">
-              <i class="fas fa-plus"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/img/project-1.jpg" alt="" />
-          <div class="text-card">
-            <div class="text-info">
-              <span class="project-title white">Purinky Products</span>
-              <span class="project-category light">Uncategorized</span>
+              <span class="project-title white">{{ project.title }}</span>
+              <span class="project-category light">{{ project.category }}</span>
             </div>
             <button class="plus-card btn-slide">
               <i class="fas fa-plus"></i>
@@ -60,8 +39,14 @@
 </template>
 
 <script>
+import { projectsHome } from "../assets/data/Projects";
 export default {
   name: "Projects",
+  data() {
+    return {
+      projects: projectsHome,
+    };
+  },
 };
 </script>
 
@@ -162,6 +147,7 @@ export default {
             transition: 0.4s ease;
             opacity: 0.9;
             &:hover {
+              background-color: $dark-secondary;
               opacity: 1;
             }
           }

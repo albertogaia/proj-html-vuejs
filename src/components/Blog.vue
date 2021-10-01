@@ -10,38 +10,18 @@
       </div>
     </div>
     <div class="bottom-section">
-      <div class="card">
-        <img src="../assets/img/blog-1.jpg" alt="" class="img-card" />
+      <div class="card" v-for="(post, index) in posts" :key="index">
+        <img :src="require(`../assets/${post.img}`)" alt="" class="img-card" />
         <div class="info-card montserrat">
-          <a href="" class="text-reset dark-blue">
+          <a :href="post.url" class="text-reset dark-blue">
             <p class="meta-data">
-              July 4, 2019 <span class="author"> by paul</span>
+              {{ post.data }} <span class="author"> {{ post.author }}</span>
             </p>
             <h3 class="title-blog">
-              Canadian consulting firm acquired by Giant UK
+              {{ post.title }}
             </h3>
             <p class="paragraph">
-              When, while lovely valley teems with vapour around meand eridian
-              sun strikes the upper impenetrable foliage of my trees, and but a
-              ...
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../assets/img/blog-1.jpg" alt="" class="img-card" />
-        <div class="info-card montserrat">
-          <a href="" class="text-reset dark-blue">
-            <p class="meta-data">
-              July 4, 2019 <span class="author"> by paul</span>
-            </p>
-            <h3 class="title-blog">
-              Canadian consulting firm acquired by Giant UK
-            </h3>
-            <p class="paragraph">
-              When, while lovely valley teems with vapour around meand eridian
-              sun strikes the upper impenetrable foliage of my trees, and but a
-              ...
+              {{ post.summary }}
             </p>
           </a>
         </div>
@@ -51,8 +31,14 @@
 </template>
 
 <script>
+import { blogPosts } from "../assets/data/BlogPosts";
 export default {
   name: "Blog",
+  data() {
+    return {
+      posts: blogPosts,
+    };
+  },
 };
 </script>
 

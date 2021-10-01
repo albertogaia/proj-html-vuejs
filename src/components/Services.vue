@@ -71,6 +71,7 @@ export default {
   position: relative;
   h3.title {
     margin-bottom: 100px;
+    max-width: 45%;
 
     &::after {
       display: inline-block;
@@ -88,7 +89,7 @@ export default {
 
   .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     .card {
       font-family: $montserrat;

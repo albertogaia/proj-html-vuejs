@@ -13,10 +13,10 @@ Primo mini progetto gestito e organizzato
 - [x] Component About Us
 - [x] Component Services
 - [x] Component Projects
-- [ ] Component Testimonial
-- [ ] Component Blog
-- [ ] Component Hero CTA
-- [ ] ADD interactions
+- [x] Component Testimonial
+- [x] Component Blog
+- [x] Component Hero CTA
+- [X] ADD interactions
 - [ ] ADD animations
 - [ ] Details
 - [ ] FINISHES AND CODE CLEANING
