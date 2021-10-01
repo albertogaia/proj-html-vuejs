@@ -58,14 +58,12 @@ h3.title {
     font-size: $fs-h3;
     font-weight: $bold;
     text-transform: uppercase;
-    display: inline-block;
 }
 
 h3.big-title {
     margin: 15px 0;
     font-size: $fs-xh3;
     text-transform: uppercase;
-    display: inline-block;
     font-weight: $xbold;
 }
 
@@ -91,10 +89,15 @@ p.paragraph {
 
 // BUTTONS
 .btn-slide {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
     border: none;
-    padding: 15px;
-    color: $light;
-    background-color: $grey;
+    color: $white;
+    font-size: 18px;
+    background-color: $dark-secondary;
+    opacity: 0.5;
     cursor: pointer;
     transition: 0.5s ease-out;
     &:hover {

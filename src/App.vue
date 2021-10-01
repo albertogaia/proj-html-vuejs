@@ -4,6 +4,7 @@
     <Jumbotron />
     <Services />
     <About />
+    <Projects />
     <Footer />
   </div>
 </template>
@@ -13,6 +14,7 @@ import Header from "./components/Header.vue";
 import Jumbotron from "./components/Jumbotron.vue";
 import Services from "./components/Services.vue";
 import About from "./components/AboutUs.vue";
+import Projects from "./components/Projects.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -22,6 +24,7 @@ export default {
     Jumbotron,
     Services,
     About,
+    Projects,
     Footer,
   },
 };
@@ -33,6 +36,7 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+
 #app {
   background-color: $dark-blue;
 }
