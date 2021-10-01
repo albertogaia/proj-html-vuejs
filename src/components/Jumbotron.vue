@@ -24,12 +24,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/general.scss";
+@import "../styles/general.scss";
 
 .jumbotron {
   margin-top: -80px;
   height: 95vh;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../assets/img/hero.jpg");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 65%;

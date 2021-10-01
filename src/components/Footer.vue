@@ -2,7 +2,7 @@
   <footer class="container px-10">
     <div class="footer-top flex">
       <div class="foot-logo">
-        <img src="@/img/logo-w.png" alt="" />
+        <img src="../assets/img/logo-w.png" alt="" />
       </div>
       <div class="foot-nav">
         <PrimaryMenu />
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/general.scss";
+@import "../styles/general.scss";
 
 footer {
   font-family: $montserrat;

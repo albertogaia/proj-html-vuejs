@@ -2,7 +2,7 @@
   <section id="about-us">
     <div class="top">
       <div class="img-about">
-        <img src="@/assets/img/about.jpg" alt="about us" />
+        <img src="../assets/img/about.jpg" alt="about us" />
       </div>
       <div class="text-about white">
         <span class="subtitle line-left">About Us</span>
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/general.scss";
+@import "../styles/general.scss";
 #about-us {
   font-family: $montserrat;
   .top {

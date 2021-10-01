@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/general.scss";
+@import "../styles/general.scss";
 
 #services {
   background-color: white;

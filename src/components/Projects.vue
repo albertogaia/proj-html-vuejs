@@ -20,7 +20,7 @@
       <div class="cards montserrat">
         <div class="card">
           <div class="img-card">
-            <img src="@/assets/img/project-1.jpg" alt="" />
+            <img src="../assets/img/project-1.jpg" alt="" />
           </div>
           <div class="card-hover">
             <div class="text-card">
@@ -35,7 +35,7 @@
         </div>
         <div class="card">
           <div class="img-card">
-            <img src="@/assets/img/project-1.jpg" alt="" />
+            <img src="../assets/img/project-1.jpg" alt="" />
           </div>
           <div class="card-hover">
             <div class="text-card"></div>
@@ -44,7 +44,7 @@
         </div>
         <div class="card">
           <div class="img-card">
-            <img src="@/assets/img/project-1.jpg" alt="" />
+            <img src="../assets/img/project-1.jpg" alt="" />
           </div>
           <div class="card-hover">
             <div class="text-card"></div>
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/general.scss";
+@import "../styles/general.scss";
 #projects {
   padding: 100px 10px;
   .top-section {

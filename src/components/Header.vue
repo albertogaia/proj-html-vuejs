@@ -1,7 +1,7 @@
 <template>
   <header class="container flex px-10" id="home">
     <div class="logo">
-      <a href="/"><img src="@/img/logo.png" alt="logo" /></a>
+      <a href="/"><img src="../assets/img/logo.png" alt="logo" /></a>
     </div>
     <div class="navmenu">
       <PrimaryMenu />
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/general.scss";
+@import "../styles/general.scss";
 
 header {
   height: 80px;
