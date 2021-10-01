@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { primaryMenu } from "@/assets/data/Links.js";
+import { primaryMenu } from "../../assets/data/Links.js";
 export default {
   name: "PrimaryMenu",
   data() {

@@ -19,36 +19,39 @@
     <div class="bottom-section">
       <div class="cards montserrat">
         <div class="card">
-          <div class="img-card">
-            <img src="../assets/img/project-1.jpg" alt="" />
-          </div>
-          <div class="card-hover">
-            <div class="text-card">
+          <img src="../assets/img/project-1.jpg" alt="" />
+          <div class="text-card">
+            <div class="text-info">
               <span class="project-title white">Purinky Products</span>
               <span class="project-category light">Uncategorized</span>
             </div>
-
             <button class="plus-card btn-slide">
               <i class="fas fa-plus"></i>
             </button>
           </div>
         </div>
         <div class="card">
-          <div class="img-card">
-            <img src="../assets/img/project-1.jpg" alt="" />
-          </div>
-          <div class="card-hover">
-            <div class="text-card"></div>
-            <div class="plus-card"></div>
+          <img src="../assets/img/project-1.jpg" alt="" />
+          <div class="text-card">
+            <div class="text-info">
+              <span class="project-title white">Purinky Products</span>
+              <span class="project-category light">Uncategorized</span>
+            </div>
+            <button class="plus-card btn-slide">
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
         </div>
         <div class="card">
-          <div class="img-card">
-            <img src="../assets/img/project-1.jpg" alt="" />
-          </div>
-          <div class="card-hover">
-            <div class="text-card"></div>
-            <div class="plus-card"></div>
+          <img src="../assets/img/project-1.jpg" alt="" />
+          <div class="text-card">
+            <div class="text-info">
+              <span class="project-title white">Purinky Products</span>
+              <span class="project-category light">Uncategorized</span>
+            </div>
+            <button class="plus-card btn-slide">
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -82,68 +85,88 @@ export default {
       justify-content: space-evenly;
       .card {
         width: calc(100% / 3 - 10px);
+        height: 350px;
         margin-bottom: 10px;
         min-width: 250px;
         position: relative;
-        overflow: hidden;
-
-        .img-card {
-          width: 100%;
-          position: relative;
-          overflow: hidden;
-
-          img {
-            width: 100%;
-            transition: 1s;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.4s ease-out;
+        box-shadow: 0px 7px 10px rgba(black, 0.5);
+        &:hover {
+          transform: translateY(20px);
+          &:before {
+            opacity: 1;
           }
-          &:hover {
-            transition: 1s;
-
-            &::before {
-              content: "";
-              position: absolute;
-              top: 0;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              background: rgba(255, 0, 0, 0.454);
-              z-index: 9;
-            }
+          .text-card {
+            opacity: 1;
+            transform: translateY(0px);
           }
         }
-
-        .card-hover {
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: rgba($red, 0.8);
+          z-index: 2;
+          transition: 0.5s;
+          opacity: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .text-card {
+          position: relative;
+          z-index: 3;
+          color: white;
+          opacity: 0;
+          transform: translateY(30px);
+          transition: 0.5s;
           display: flex;
           justify-content: space-between;
-          align-items: flex-end;
-          position: absolute;
-          left: 10px;
-          right: 0;
-          z-index: 99;
+          width: 100%;
+          padding: 15px;
+          align-items: center;
+          .text-info {
+            display: flex;
+            flex-direction: column;
+          }
 
-          .text-card {
-            .project-title {
-              font-size: $fs-h3;
-              display: block;
-              font-weight: 600;
+          .project-title {
+            margin: 0px;
+            font-size: $fs-h3;
+            font-weight: $bold;
+          }
+          .project-category {
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-top: 8px;
+          }
+          button {
+            padding: 0.6rem;
+            outline: none;
+            border: none;
+            background: $dark-blue;
+            color: $white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease;
+            opacity: 0.9;
+            &:hover {
+              opacity: 1;
             }
           }
-        }
-        &:hover {
-          img {
-            transform: scale(1.1);
-          }
-          .card-hover {
-            animation: show-text 0.8s 0.3s forwards;
-            transition: 1s;
-          }
-        }
-        @keyframes show-text {
-          from {
-            bottom: 0;
-          }
-          to {
-            bottom: 15px;
+          &:hover {
+            color: white;
           }
         }
       }
