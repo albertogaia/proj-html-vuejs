@@ -17,9 +17,9 @@ Primo mini progetto gestito e organizzato
 - [x] Component Blog
 - [x] Component Hero CTA
 - [X] ADD interactions
-- [ ] ADD animations
-- [ ] Details
-- [ ] FINISHES AND CODE CLEANING
+- [x] ADD animations
+- [x] Details
+- [x] FINISHES AND CODE CLEANING
 - [ ] Checks browsers supports
   ## Color Reference
 

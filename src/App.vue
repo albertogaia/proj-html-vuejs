@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div id="scroller"></div>
     <Header />
     <Jumbotron />
     <Services />
@@ -9,6 +10,14 @@
     <Blog />
     <HeroCTA />
     <Footer />
+
+    <div class="fixed-bottom">
+      <a href="#"
+        ><div class="up-to-page">
+          <i class="fas fa-arrow-up"></i></div
+      ></a>
+      <button class="chat"><i class="far fa-comment"></i></button>
+    </div>
   </div>
 </template>
 
@@ -72,5 +81,47 @@ html {
 }
 #app {
   background-color: $dark-blue;
+  overflow: hidden;
+
+  .up-to-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: 3px 3px 20px rgba($dark-blue, 0.4);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .chat {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    font-size: $fs-h3;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 3px 3px 20px rgba($dark-blue, 0.4);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 </style>
