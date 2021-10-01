@@ -11,7 +11,7 @@
     <HeroCTA />
     <Footer />
 
-    <div class="fixed-bottom">
+    <div class="fixed-bottom" id="myBtn">
       <a href="#"
         ><div class="up-to-page">
           <i class="fas fa-arrow-up"></i></div
@@ -48,6 +48,23 @@ export default {
     HeroCTA,
     Footer,
   },
+
+  methods: {
+    scrollFunction() {
+      let mybutton = document.getElementById("myBtn");
+      if (
+        document.body.scrollTop > 400 ||
+        document.documentElement.scrollTop > 400
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.scrollFunction);
+  },
 };
 </script>
 
@@ -83,44 +100,47 @@ html {
   background-color: $dark-blue;
   overflow: hidden;
 
-  .up-to-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $white;
-    position: fixed;
-    bottom: 20px;
-    right: 100px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: 0.2s;
-    box-shadow: 3px 3px 20px rgba($dark-blue, 0.4);
-    &:hover {
-      transform: scale(1.1);
+  #myBtn {
+    transition: 2s;
+    .up-to-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      position: fixed;
+      bottom: 20px;
+      right: 100px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: 0.2s;
+      box-shadow: 3px 3px 20px rgba($dark-blue, 0.4);
+      &:hover {
+        transform: scale(1.1);
+      }
     }
-  }
 
-  .chat {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    font-size: $fs-h3;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: $blue;
-    color: $white;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
-    box-shadow: 3px 3px 20px rgba($dark-blue, 0.4);
+    .chat {
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      font-size: $fs-h3;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $blue;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      transition: 0.5s;
+      box-shadow: 3px 3px 20px rgba($dark-blue, 0.4);
 
-    &:hover {
-      transform: scale(1.1);
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
