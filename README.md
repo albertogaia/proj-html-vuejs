@@ -6,21 +6,21 @@ Primo mini progetto gestito e organizzato
 
 ## Roadmap
 
-[x] Analysis components
-[x] Create Vars.scss with font-family, colors, sizes
-[x] Create general.scss for container and common classes
-[x] Components Header & Footer first
-[x] Component About Us
-[x] Component Services
-[x] Component Projects
-[ ] Component Testimonial
-[ ] Component Blog
-[ ] Component Hero CTA
-[ ] ADD interactions
-[ ] ADD animations
-[ ] Details
-[ ] FINISHES AND CODE CLEANING
-[ ] Checks browsers supports
+- [x] Analysis components
+- [x] Create Vars.scss with font-family, colors, sizes
+- [x] Create general.scss for container and common classes
+- [x] Components Header & Footer first
+- [x] Component About Us
+- [x] Component Services
+- [x] Component Projects
+- [ ] Component Testimonial
+- [ ] Component Blog
+- [ ] Component Hero CTA
+- [ ] ADD interactions
+- [ ] ADD animations
+- [ ] Details
+- [ ] FINISHES AND CODE CLEANING
+- [ ] Checks browsers supports
   ## Color Reference
 
 | Color             | Hex                                                                |
