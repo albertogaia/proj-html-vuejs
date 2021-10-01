@@ -6,6 +6,7 @@
     <About />
     <Projects />
     <Testimonials />
+    <Blog />
     <Footer />
   </div>
 </template>
@@ -17,6 +18,7 @@ import Services from "./components/Services.vue";
 import About from "./components/AboutUs.vue";
 import Projects from "./components/Projects.vue";
 import Testimonials from "./components/Testimonials.vue";
+import Blog from "./components/Blog.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -28,6 +30,7 @@ export default {
     About,
     Projects,
     Testimonials,
+    Blog,
     Footer,
   },
 };
