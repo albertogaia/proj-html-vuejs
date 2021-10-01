@@ -6,12 +6,12 @@ Primo mini progetto gestito e organizzato
 
 ## Roadmap
 
-- Analysis components
-- Create Vars.scss with font-family, colors, sizes
-- Create general.scss for container and common classes
-- Components Header & Footer first
-- Component About Us
-- Component Services
+✅ Analysis components
+✅ Create Vars.scss with font-family, colors, sizes
+✅ Create general.scss for container and common classes
+✅ Components Header & Footer first
+✅ Component About Us
+✅ Component Services
 - Component Projects
 - Component Testimonial
 - Component Blog
@@ -25,13 +25,13 @@ Primo mini progetto gestito e organizzato
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| dark-blue | ![#1F1E38](https://via.placeholder.com/10/0a192f?text=+) #1F1E38 |
-| dark-secondary | ![#454472](https://via.placeholder.com/10/f8f8f8?text=+) #454472 |
-| acquamarine | ![#39ffbf](https://via.placeholder.com/10/00b48a?text=+) #39ffbf |
-| red | ![#F81D39](https://via.placeholder.com/10/00b48a?text=+) #F81D39 |
-| white | ![#fff](https://via.placeholder.com/10/00b48a?text=+) #fff |
-| blue | ![#527CEB](https://via.placeholder.com/10/00b48a?text=+) #527CEB |
-| grey | ![#333](https://via.placeholder.com/10/00b48a?text=+) #333 |
+| dark-blue | ![#1F1E38](https://via.placeholder.com/10/1F1E38?text=+) #1F1E38 |
+| dark-secondary | ![#454472](https://via.placeholder.com/10/454472?text=+) #454472 |
+| acquamarine | ![#39ffbf](https://via.placeholder.com/10/39ffbf?text=+) #39ffbf |
+| red | ![#F81D39](https://via.placeholder.com/10/F81D39?text=+) #F81D39 |
+| white | ![#fff](https://via.placeholder.com/10/fff?text=+) #fff |
+| blue | ![#527CEB](https://via.placeholder.com/10/527CEB?text=+) #527CEB |
+| grey | ![#333](https://via.placeholder.com/10/333?text=+) #333 |
 
 
 
