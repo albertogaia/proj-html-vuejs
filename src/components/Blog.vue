@@ -1,5 +1,11 @@
 <template>
-  <section id="blog" class="container">
+  <section
+    id="blog"
+    class="container"
+    data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-easing="ease-in-sine"
+  >
     <div class="top-section flex">
       <div class="section-text">
         <span class="subtitle line-left white">Blog</span>

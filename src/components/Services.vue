@@ -3,7 +3,7 @@
     <div class="container-small">
       <h3 class="jamjuree title px-10">Our consultants can help you</h3>
       <div class="cards px-10">
-        <div class="card">
+        <div class="card" data-aos="fade-right">
           <div class="icon-card">
             <i class="far fa-chart-bar"></i>
           </div>
@@ -16,7 +16,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-left">
           <div class="icon-card">
             <i class="fas fa-bullhorn"></i>
           </div>
@@ -28,7 +28,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-right">
           <div class="icon-card">
             <i class="fas fa-wallet"></i>
           </div>
@@ -40,7 +40,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-left">
           <div class="icon-card">
             <i class="fas fa-bullseye"></i>
           </div>

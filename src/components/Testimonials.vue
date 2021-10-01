@@ -1,14 +1,24 @@
 <template>
   <section id="testimonials">
     <div class="top-section flex container px-10">
-      <div class="section-text">
+      <div
+        class="section-text"
+        data-aos="fade-left"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+      >
         <span class="subtitle line-right white">Testimonial</span>
         <h3 class="big-title jamjuree white">
           What's the customer say about our work
         </h3>
       </div>
     </div>
-    <div class="bottom-section container-aside">
+    <div
+      class="bottom-section container-aside"
+      data-aos="fade-left"
+      data-aos-offset="50"
+      data-aos-easing="ease-in-sine"
+    >
       <template>
         <div class="container-inside">
           <div

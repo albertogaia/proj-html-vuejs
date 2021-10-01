@@ -1,13 +1,22 @@
 <template>
   <section id="projects" class="container">
     <div class="top-section flex">
-      <div class="section-text">
+      <div
+        class="section-text"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <span class="subtitle line-left white">Project</span>
         <h3 class="big-title jamjuree white">
           Our expert trusted consultants help clients
         </h3>
       </div>
-      <div>
+      <div
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <button class="btn-slide">
           <i class="fas fa-long-arrow-alt-left"></i>
         </button>
@@ -16,7 +25,12 @@
         </button>
       </div>
     </div>
-    <div class="bottom-section">
+    <div
+      class="bottom-section"
+      data-aos="fade-up"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
       <div class="cards montserrat">
         <div class="card" v-for="(project, index) in projects" :key="index">
           <img

@@ -1,5 +1,11 @@
 <template>
-  <section id="cta">
+  <section
+    id="cta"
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="50"
+    data-aos-offset="0"
+  >
     <h3 class="big-title white jamjuree">Let's Talk About Work</h3>
     <p class="paragraph white montserrat">
       A wonderful serenity has taken possession Far far away, behind the word

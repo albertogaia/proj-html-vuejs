@@ -4,7 +4,12 @@
       <div class="img-about">
         <img src="../assets/img/about.jpg" alt="about us" />
       </div>
-      <div class="text-about white">
+      <div
+        class="text-about white"
+        data-aos="fade-left"
+        data-aos-offset="50"
+        data-aos-easing="ease-in-sine"
+      >
         <span class="subtitle line-left">About Us</span>
         <h2 class="title">We make your strategy work</h2>
         <p class="paragraph light">
@@ -16,7 +21,12 @@
         </p>
       </div>
     </div>
-    <div class="bottom-cta">
+    <div
+      class="bottom-cta"
+      data-aos="fade-right"
+      data-aos-offset="50"
+      data-aos-easing="ease-in-sine"
+    >
       <BusinessCareCTA />
     </div>
   </section>
