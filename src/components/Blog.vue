@@ -6,13 +6,15 @@
     data-aos-offset="50"
     data-aos-easing="ease-in-sine"
   >
-    <div class="top-section flex">
+    <div class="top-section flex px-10">
       <div class="section-text">
         <span class="subtitle line-left white">Blog</span>
         <h3 class="big-title jamjuree white">The recent News you must read</h3>
       </div>
       <div>
-        <button class="view-all">View All</button>
+        <button class="view-all" id="view-all-posts" @click="getMore">
+          View More
+        </button>
       </div>
     </div>
     <div class="bottom-section">
@@ -42,9 +44,22 @@ export default {
   name: "Blog",
   data() {
     return {
-      posts: blogPosts,
+      posts: blogPosts.slice(0, 2),
+      more: false,
     };
   },
+  methods: {
+    getMore() {
+      if (this.posts.length == 2) {
+        this.posts = blogPosts;
+        document.getElementById("view-all-posts").innerText = "View Less";
+      } else {
+        this.posts = blogPosts.slice(0, 2);
+        document.getElementById("view-all-posts").innerText = "View More";
+      }
+    },
+  },
+  created() {},
 };
 </script>
 
@@ -61,10 +76,13 @@ export default {
   .bottom-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     .card {
       width: calc(100% / 2 - 50px);
+      min-width: 400px;
       position: relative;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       align-items: flex-end;
       overflow: hidden;
