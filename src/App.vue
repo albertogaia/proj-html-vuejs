@@ -20,8 +20,9 @@
         <i class="far" :class="iconChat"></i>
       </button>
     </div>
-
-    <Chatbox v-show="visible" />
+    <transition name="chat">
+      <Chatbox v-show="visible" />
+    </transition>
   </div>
 </template>
 
@@ -97,6 +98,17 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 html {
   scroll-behavior: smooth;
+}
+.chat-leave-from {
+  opacity: 1;
+  transform: translateX(0);
+}
+.chat-leave-to {
+  opacity: 0;
+  transform: translateX(200px);
+}
+.chat-leave-active {
+  transition: all 0.3s ease-out;
 }
 ::-webkit-scrollbar {
   width: 1.2em;

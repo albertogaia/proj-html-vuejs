@@ -9,7 +9,9 @@
           <h1>The best business consulting</h1>
           <div class="ctas">
             <button><a href="#about">Read More</a></button>
-            <div class="play-button"><i class="fas fa-play"></i></div>
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
           </div>
         </div>
       </div>
