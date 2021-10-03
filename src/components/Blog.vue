@@ -18,22 +18,28 @@
       </div>
     </div>
     <div class="bottom-section">
-      <div class="card" v-for="(post, index) in posts" :key="index">
-        <img :src="require(`../assets/${post.img}`)" alt="" class="img-card" />
-        <div class="info-card montserrat">
-          <a :href="post.url" class="text-reset dark-blue">
-            <p class="meta-data">
-              {{ post.data }} <span class="author"> {{ post.author }}</span>
-            </p>
-            <h3 class="title-blog">
-              {{ post.title }}
-            </h3>
-            <p class="paragraph">
-              {{ post.summary }}
-            </p>
-          </a>
+      <transition-group name="fade" class="bottom-section">
+        <div class="card" v-for="(post, index) in posts" :key="index">
+          <img
+            :src="require(`../assets/${post.img}`)"
+            alt=""
+            class="img-card"
+          />
+          <div class="info-card montserrat">
+            <a :href="post.url" class="text-reset dark-blue">
+              <p class="meta-data">
+                {{ post.data }} <span class="author"> {{ post.author }}</span>
+              </p>
+              <h3 class="title-blog">
+                {{ post.title }}
+              </h3>
+              <p class="paragraph">
+                {{ post.summary }}
+              </p>
+            </a>
+          </div>
         </div>
-      </div>
+      </transition-group>
     </div>
   </section>
 </template>
@@ -77,6 +83,14 @@ export default {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 1s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }
     .card {
       width: calc(100% / 2 - 50px);
       min-width: 400px;
